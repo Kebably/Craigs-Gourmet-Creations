@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html lang="en">
+
+<head>
+
+    <meta charset=UTF-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html,body').animate({
+        scrollTop: target.offset().top
+        }, 800);
+        return false;
+        }
+        }
+        });
+        });
+    </script>
+
+<style type="text/css">
+
+    /* Global Elements */
+    body{
+        font-family: 'Chelsea Market', cursive;
+        font-size: 12px;
+    }
+
+    /* Background Image */
+    #bgimg{
+        position: fixed;
+        left: 0;bottom: 0;
+        width: 100%;
+        height: 100%;
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/purty_wood.png");
+    z-index: -999;
+    }
+
+    /* Primary Container */
+    #container{
+        width: 900px;
+        height: 100%;
+        background-color: #FFF;
+    z-index: -999;
+    }
+
+    /* Secondary Container */
+    #tupp{
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 900px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Header / Navigation Bar */
+    #header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        background-color: #FFF;
+        border-bottom: 1px solid #e9bf7d;
+    z-index: 5;
+    }
+
+    /* Header/ Navigation Link */
+    #header a {
+        font-size: 15px;
+        color: #333;
+        display: inline-block;
+        height: 25px;
+        line-height: 27px;
+        width: 75px;
+        font-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Chelsea Market', cursive;
+    }
+
+    /* Header/ Navigation Link Hovered */
+    #header a:hover{color: #beda2f;}
+
+    /* Widget Pages */
+    .page{
+        position: relative;
+        left: 0; top: 50px; right: 0;
+        margin: 25px auto;
+        background-color: #FFF;
+        width: 900px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    /* Gallery Thumb Holder */
+    .gal{
+        display: inline-block;
+        vertical-align: top;
+        width: 200px; height: 200px;
+        overflow: hidden;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* Gallery Images */
+    .gal img{
+        left: 0;
+        top: 0;
+        height: 60%;
+    }
+
+    /* Gallery Image Bio */
+    .nb{
+        padding: 10px;
+        font-size: 10px;
+        font-family: 'Chelsea Market', cursive;
+        text-align: center;
+    }
+
+    /* Gallery Image Bio Title */
+    .nb b{font-size: 12px;}
+
+    /* Content Headings */
+    .heading{
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Chelsea Market', cursive;
+    }
+
+    /* Gallery Image Placeholder */
+    .yum{
+        display: inline-block;
+        vertical-align: top;
+        width: 200px; height: 200px;
+        overflow: hidden;
+        border-top: 1px solid #EEe;
+        border-bottom: 1px solid #EEe;
+        margin-top: 5px;
+    }
+
+    /* Gallery Images*/
+    .yum img{
+        left: 0;
+        top: 0;
+        height: 200%;
+    }
+
+    /* Contact Image Placeholder */
+    .bit{
+        display: inline-block;
+        font-family: 'Fredericka the Great', cursive;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        vertical-align: top;
+        margin: 5px;
+    }
+
+    .bit i{font-size: .4em; font-style: none;}
+
+    /* Sets Margins for about */
+    .text{
+        margin: 25px;
+        text-align: justify;
+    }
+
+    /* Main Image / Logo */
+    #logo{height: 85%;}
+
+    /* Columns for order */
+    .rightside, .leftside{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .rightside b, .leftside b{
+        dislay: block;
+        width: 100%;
+        float: left;
+        border: 1px solid #000;
+        padding: 5px;
+        margin: 5px;
+        text-align: left;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="bgimg"></div>
+
+<div id="header"><center>
+    <a href="#top" class="scroll">Home</a>
+    <a href="#about" class="scroll">About</a>
+    <a href="#menus" class="scroll">Menus</a>
+    <a href="#meals" class="scroll">Meals</a>
+    <a href="#order" class="scroll">Order</a>
+    <a href="#contact" class="scroll">Contact</a>
+</div>
+
+<a id="top">Welcome</a><!-- ANCHOR -->
+
+<div class="page" style="top: 25px;">
+    <center>
+        <img id="logo" src="https://scontent.fbne1-1.fna.fbcdn.net/v/t1.0-9/11401017_977883255566370_8204953115436169445_n.jpg?oh=f2c948e760901f4dec0229d6bbeed28d&oe=58CEAB93">
+    </center>
+</div>
+
+<a id="about"><b></b></a><!-- ANCHOR -->
+
+<div class="page"><div class="heading">About Craig</div>
+    <div class="text">
+        Aenean suscipit neque id mi ultricies auctor. Suspendisse fringilla at enim ut vestibulum. Nullam vel turpis augue.
+        Maecenas pretium rhoncus nisi, nec hendrerit lorem commodo vitae. Phasellus a volutpat diam, sit amet mollis erat.
+        Integer in diam a nulla dictum feugiat pharetra at dui. Morbi et egestas nunc, sit amet dapibus nisi. Nam nec sagittis ligula, id aliquet nibh.
+        Nam sollicitudin luctus sem, nec eleifend ligula condimentum in. Suspendisse tincidunt malesuada placerat.
+        Nullam molestie dictum purus, eget congue ligula fermentum eu. 28 Years in the Industry and running the business for 10 years.
+        Now has over 100 local lovers who claim his creations are the greatest taste on the Coast.
+
+        <p>Aenean suscipit neque id mi ultricies auctor. Suspendisse fringilla at enim ut vestibulum. Nullam vel turpis augue.
+        Maecenas pretium rhoncus nisi, nec hendrerit lorem commodo vitae. Phasellus a volutpat diam, sit amet mollis erat.
+        Integer in diam a nulla dictum feugiat pharetra at dui. Morbi et egestas nunc, sit amet dapibus nisi. Nam nec sagittis ligula, id aliquet nibh.
+        Nam sollicitudin luctus sem, nec eleifend ligula condimentum in. Suspendisse tincidunt malesuada placerat.
+    </div>
+</div>
+
+<a id="menus"><b></b></a><!-- ANCHOR -->
+
+<div class="page"><div class="heading">Menu Text</div>
+
+<center>
+
+    <div class="gal"><!-- MENU ITEM -->
+        <center>
+            <img src="https://static.wixstatic.com/media/3a8aac_4f9d48fa2b704a2e8290538929421ddf.jpg/v1/fit/w_600,h_591,q_75,usm_0.50_1.20_0.00/3a8aac_4f9d48fa2b704a2e8290538929421ddf.jpg">
+
+            <div class="nb">
+                <b>Heading</b>
+                <br>Short Description 1
+                <br>Short Description 2
+                <br>Short Description 3
+            </div>
+        </center>
+    </div>
+
+    <div class="gal"><!-- MENU ITEM -->
+        <center>
+            <img src="https://static.wixstatic.com/media/3a8aac_87575d8b75a147f3bb90e6f009d315a0.jpg/v1/fit/w_600,h_206,q_75/3a8aac_87575d8b75a147f3bb90e6f009d315a0.jpg">
+
+            <div class="nb">
+                <b>Heading</b>
+                <br>Short Description 1
+                <br>Short Description 2
+                <br>Short Description 3
+            </div>
+        </center>
+    </div>
+
+    <div class="gal"><!-- MENU ITEM -->
+        <center>
+            <img src="https://static.wixstatic.com/media/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg/v1/fit/w_600,h_366,q_75/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg">
+
+            <div class="nb">
+                <b>Heading</b>
+                <br>Short Description 1
+                <br>Short Description 2
+                <br>Short Description 3
+            </div>
+        </center>
+    </div>
+
+    <div class="gal"><!-- MENU ITEM -->
+        <center>
+            <img src="https://static.wixstatic.com/media/3a8aac_abb856d02c3a402082bdbdd7d5b44f43.jpg/v1/fit/w_600,h_206,q_75/3a8aac_abb856d02c3a402082bdbdd7d5b44f43.jpg">
+
+            <div class="nb">
+                <b>Heading</b>
+                <br>Short Description 1
+                <br>Short Description 2
+                <br>Short Description 3
+            </div>
+        </center>
+    </div>
+
+</div>
+
+<a id="meals"><b></b></a><!-- ANCHOR -->
+
+
+<div class="page"><div class="heading">Gallery</div>
+
+    <center>
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img src="https://static.wixstatic.com/media/3a8aac_58a8dc8e3450469f90b75f2ae849e3e1.jpg/v1/fit/w_600,h_366,q_75/3a8aac_58a8dc8e3450469f90b75f2ae849e3e1.jpg">
+        </div>
+
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img  style="height: 100%;" src="https://static.wixstatic.com/media/3a8aac_cc9baa96a41d4252a1a44a8cb52bf2b2.jpg/v1/fit/w_600,h_206,q_75/3a8aac_cc9baa96a41d4252a1a44a8cb52bf2b2.jpg">
+        </div>
+
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img src="https://static.wixstatic.com/media/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg/v1/fit/w_600,h_366,q_75/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg">
+        </div>
+
+        <br>
+
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img src="https://static.wixstatic.com/media/3a8aac_58a8dc8e3450469f90b75f2ae849e3e1.jpg/v1/fit/w_600,h_366,q_75/3a8aac_58a8dc8e3450469f90b75f2ae849e3e1.jpg">
+        </div>
+
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img  style="height: 100%;" src="https://static.wixstatic.com/media/3a8aac_cc9baa96a41d4252a1a44a8cb52bf2b2.jpg/v1/fit/w_600,h_206,q_75/3a8aac_cc9baa96a41d4252a1a44a8cb52bf2b2.jpg">
+        </div>
+
+        <div class="yum"><!-- MENU ITEM --><center>
+            <img src="https://static.wixstatic.com/media/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg/v1/fit/w_600,h_366,q_75/3a8aac_59263f01b2be4fb0b2587c3750222246.jpg">
+        </div>
+    </center>
+
+</div>
+
+
+<a id="order"><b></b></a><!-- ANCHOR -->
+
+
+<div class="page"><div class="heading">Order</div>
+
+    <center>
+        <div class="leftside">
+            <img style="max-width: 90%;" src="https://static.wixstatic.com/media/3a8aac_f3db340ad88f4464a53e1ab77ed2d176.jpg/v1/fill/w_448,h_569,al_c,q_75,usm_0.50_1.20_0.00,lg_1/3a8aac_f3db340ad88f4464a53e1ab77ed2d176.jpg">
+        </div>
+
+        <div class="rightside"><div class="heading">Form</div>
+            <b>Name</b>
+            <b>Address</b>
+            <b>Order</b>
+        </div>
+    </center>
+
+</div>
+
+<a id="contact"><b></b></a><!-- ANCHOR -->
+
+<div class="page"><div class="heading">Contact</div>
+
+    <center>
+        <div class="bit">
+            <img src="https://static.wixstatic.com/media/41d000_fd2a984dea93f1784e93b7fdcbe82566.png/v1/fit/w_172,h_152/41d000_fd2a984dea93f1784e93b7fdcbe82566.png">
+            <p>Follow us on
+            <br><b>Facebook</b>
+        </div>
+
+        <div class="bit">
+            <img src="https://static.wixstatic.com/media/41d000_864e27ee461982f52bf456507552f964.png/v1/fit/w_172,h_152/41d000_864e27ee461982f52bf456507552f964.png">
+            <p>Call us now
+            <br><b>today on</b>
+            <br>0427 909 575
+        </div>
+
+        <div class="bit">
+            <img src="https://static.wixstatic.com/media/41d000_fd33379d800cf8e69cd5f951a0b4077a.png/v1/fit/w_172,h_152/41d000_fd33379d800cf8e69cd5f951a0b4077a.png">
+            <p>Say Hello
+            <br><b>By Email</b>
+            <br><i>craigsgourmetcreations
+            <br>@gmail.com </i>
+        </div>
+    </center>
+</div>
+
+</body>
+
+</html>
